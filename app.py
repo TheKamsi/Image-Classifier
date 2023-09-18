@@ -1,7 +1,7 @@
 import gradio as gr 
 from transformers import pipeline
 
-model = pipeline(task="image-classification", model="julien-c/hotdog-not-hodog")
+model = pipeline(task="image-classification", model="TheKamsi/hotdog_not_hodog")
 
 def predict(image):
     predictions = model(image)
